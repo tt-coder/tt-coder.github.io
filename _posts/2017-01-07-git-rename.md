@@ -25,6 +25,12 @@ git filter-branch -f --env-filter
  GIT_COMMITTER_EMAIL='MAIL@MAIL.COM';  
 " HEAD  
 ```  
+
+OR
+
+```
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME='NAME'; GIT_AUTHOR_EMAIL='MAIL@MAIL.COM'; GIT_COMMITTER_NAME='NAME'; GIT_COMMITTER_EMAIL='MAIL@MAIL.COM'; " HEAD
+```
   
 ```  
 git push -f origin master  
