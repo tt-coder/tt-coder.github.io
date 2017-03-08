@@ -2,6 +2,7 @@
 layout: default
 title: SamuraAI Coding 2016のルール
 date: 2017/01/18 23:50
+published: false
 ---
 
 公式のルールが読みづらい、理解しづらいのでまとめる。
