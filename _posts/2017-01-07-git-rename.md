@@ -11,25 +11,25 @@ gitでAuthorが異なってしまった場合のコミット&プッシュ主の�
 ## Author変更  
   
 ```  
-git config --local user.name NAME  
-git config --local user.email MAIL@MAIL.COM  
+git config --local user.name   
+git config --local user.email @gmail.com  
 ```  
   
 ## 過去のコミット&プッシュ主変更  
   
 ```  
 git filter-branch -f --env-filter  
-"GIT_AUTHOR_NAME='NAME';  
- GIT_AUTHOR_EMAIL='MAIL@MAIL.COM';  
- GIT_COMMITTER_NAME='NAME';  
- GIT_COMMITTER_EMAIL='MAIL@MAIL.COM';  
+"GIT_AUTHOR_NAME='';  
+ GIT_AUTHOR_EMAIL='@gmail.com';  
+ GIT_COMMITTER_NAME='';  
+ GIT_COMMITTER_EMAIL='@gmail.com';  
 " HEAD  
 ```  
 
 OR
 
 ```
-git filter-branch -f --env-filter "GIT_AUTHOR_NAME='NAME'; GIT_AUTHOR_EMAIL='MAIL@MAIL.COM'; GIT_COMMITTER_NAME='NAME'; GIT_COMMITTER_EMAIL='MAIL@MAIL.COM'; " HEAD
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME=''; GIT_AUTHOR_EMAIL='@gmail.com'; GIT_COMMITTER_NAME=''; GIT_COMMITTER_EMAIL='@gmail.com'; " HEAD
 ```
   
 ```  
